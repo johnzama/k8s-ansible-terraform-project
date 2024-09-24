@@ -24,3 +24,12 @@ resource "aws_instance" "k8s_instance" {
   EOF
 }
 
+output "instance_public_ip" {
+  value = aws_instance.k8s_instance.public_ip
+  description = "The public IP of the EC2 instance"
+}
+
+output "instance_public_dns" {
+  value = aws_instance.k8s_instance.public_dns
+  description = "The public DNS of the EC2 instance"
+}
