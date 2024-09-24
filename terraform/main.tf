@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "k8s_instance" {
-  ami           = "ami-0dc2d3e4c0f9ebd18"  # Amazon Linux 2 AMI (find the latest for your region)
+  ami           = "ami-003932de22c285676 "  # Amazon Linux 2 AMI (find the latest for your region)
   instance_type = "t2.micro"
 
   tags = {
