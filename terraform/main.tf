@@ -21,7 +21,7 @@ resource "aws_instance" "k8s_instance" {
   # Install Kubernetes tools
   sudo curl -Lo /usr/bin/kubectl https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
   sudo chmod +x /usr/bin/kubectl
-  EOF
+  EOF         
 }
 
 output "instance_public_ip" {
